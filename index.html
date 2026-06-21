@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ledgerlens — Private AI for client documents</title>
+<meta name="description" content="Ask questions about client PDFs without uploading sensitive data. A local-first AI document assistant for accountants and bookkeepers." />
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--muted:#9aa7b4;--accent:#3b82f6;--line:#222a35;--ok:#3fb950}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:64px 0 40px;text-align:center}
+  .logo{font-size:15px;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+  h1{font-size:42px;line-height:1.15;margin:18px 0 14px;letter-spacing:-.5px}
+  .sub{font-size:20px;color:var(--muted);max-width:620px;margin:0 auto}
+  .cta{margin:34px 0 8px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{background:var(--accent);color:#fff;border:0;border-radius:9px;padding:14px 26px;
+       font-size:16px;font-weight:600;text-decoration:none;display:inline-block;cursor:pointer}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .price{color:var(--muted);font-size:14px;margin-top:10px}
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  h2{font-size:26px;margin-bottom:22px;letter-spacing:-.3px}
+  .privacy{display:grid;gap:12px;max-width:560px}
+  .privacy li{list-style:none;padding-left:30px;position:relative;font-size:17px}
+  .privacy li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:20px}
+  .step .n{color:var(--accent);font-weight:700;font-size:14px}
+  .step h3{font-size:17px;margin:8px 0 6px}
+  .step p{color:var(--muted);font-size:14px}
+  .pricing{background:var(--card);border:1px solid var(--line);border-radius:14px;
+           padding:30px;text-align:center;max-width:420px;margin:0 auto}
+  .pricing .big{font-size:40px;font-weight:700}
+  .pricing .was{color:var(--muted);text-decoration:line-through;font-size:18px;margin-left:8px}
+  .pricing ul{list-style:none;margin:18px 0;text-align:left;display:inline-block}
+  .pricing li{padding:5px 0 5px 26px;position:relative;color:var(--muted)}
+  .pricing li::before{content:"✓";position:absolute;left:0;color:var(--ok)}
+  .trust{color:var(--muted);font-size:14px;text-align:center;line-height:2}
+  .trust a{color:var(--accent)}
+  footer{padding:40px 0 70px;text-align:center;color:var(--muted);font-size:13px}
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:640px}
+  .compare div{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:18px}
+  .compare .bad{color:#e5897d}.compare .good{color:var(--ok)}
+  @media(max-width:680px){.steps{grid-template-columns:1fr}.compare{grid-template-columns:1fr}h1{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">Ledgerlens</div>
+    <h1>Ask questions about client PDFs<br>without uploading sensitive data.</h1>
+    <p class="sub">A local-first AI document assistant for accountants and bookkeepers.
+       Turn client paperwork into searchable notes in minutes — the files never leave your computer.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:zhaowei54@gmail.com?subject=Ledgerlens%20—%20I'd%20like%20to%20try%20it&body=Hi%20Michael,%20I'm%20an%20accountant/bookkeeper%20and%20I'd%20like%20to%20try%20Ledgerlens.">Request access (macOS)</a>
+      <a class="btn ghost" href="mailto:zhaowei54@gmail.com?subject=Ledgerlens%20—%20Windows%20waitlist&body=Hi%20Michael,%20please%20add%20me%20to%20the%20Windows%20waitlist.">Join the Windows waitlist</a>
+    </div>
+    <div class="price">Early access · US$49 lifetime &nbsp;·&nbsp; <s>US$49</s> <b style="color:#fff">$29 early-bird</b></div>
+  </header>
+
+  <section>
+    <h2>Why not just use ChatGPT?</h2>
+    <div class="compare">
+      <div>
+        <div class="bad">✗ Cloud AI tools</div>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">
+          Client tax files leave your computer and land on someone else's servers.
+          For an accountant, that's a confidentiality problem you can't explain away.</p>
+      </div>
+      <div>
+        <div class="good">✓ Ledgerlens</div>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">
+          Documents are processed entirely on your own machine. You can run AI
+          offline, or plug in your own API key — your choice, your account.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Built for privacy, not lock-in</h2>
+    <ul class="privacy">
+      <li>No cloud upload — documents stay on your computer</li>
+      <li>No data retention — nothing is stored by us, ever</li>
+      <li>Works offline with a local AI model</li>
+      <li>Bring your own model or API key — no vendor lock-in</li>
+      <li>You stay in control of every file and every key</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Drop in PDFs</h3>
+        <p>Point it at a client's documents — statements, deeds, returns, contracts.</p></div>
+      <div class="step"><div class="n">2</div><h3>Get clean, searchable text</h3>
+        <p>Tables and all, converted on your machine. Nothing uploaded.</p></div>
+      <div class="step"><div class="n">3</div><h3>Ask the AI</h3>
+        <p>Get draft notes and answers — offline, or with your own API key.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Simple pricing</h2>
+    <div class="pricing">
+      <div><span class="big">$29</span><span class="was">$49</span></div>
+      <div style="color:var(--muted);font-size:14px">Lifetime license · early-bird</div>
+      <ul>
+        <li>One-time payment, yours forever</li>
+        <li>Unlimited documents, fully local</li>
+        <li>Use your own OpenAI / Anthropic key, or a free local model</li>
+        <li>Free updates during early access</li>
+      </ul>
+      <a class="btn" href="mailto:zhaowei54@gmail.com?subject=Ledgerlens%20—%20I'd%20like%20to%20try%20it&body=Hi%20Michael,%20I'm%20an%20accountant/bookkeeper%20and%20I'd%20like%20to%20try%20Ledgerlens." style="display:block">Request access for macOS</a>
+    </div>
+  </section>
+
+  <section id="waitlist">
+    <h2>On Windows? Join the waitlist</h2>
+    <p style="color:var(--muted);max-width:560px">The Windows version is in the works.
+       Drop your email and you'll be first to know — and get the early-bird price.</p>
+    <div class="cta" style="justify-content:flex-start;margin-top:18px">
+      <a class="btn ghost" href="mailto:zhaowei54@gmail.com?subject=Ledgerlens%20—%20Windows%20waitlist&body=Hi%20Michael,%20please%20add%20me%20to%20the%20Windows%20waitlist.">Join Windows waitlist</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Made by a real person</h2>
+    <p class="trust">
+      Ledgerlens is built and supported by an independent developer.<br>
+      Questions before you buy? Email <a href="mailto:zhaowei54@gmail.com">zhaowei54@gmail.com</a>
+      &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/michael-z-69b43137/" target="_blank" rel="noopener">LinkedIn</a><br>
+      Your documents are yours. We never see them, store them, or train on them.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ledgerlens · Ledgerlens produces draft notes for professional review — not final tax advice.
+  </footer>
+
+</div>
+</body>
+</html>
